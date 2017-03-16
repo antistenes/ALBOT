@@ -35,7 +35,7 @@ exports.handle = (client) => {
 
   client.runFlow({
     classifications: {
-      // map inbound message classifications to names of streams
+      artist:'artist'
     },
     autoResponses: {
       // configure responses to be automatically sent as predicted by the machine learning model
@@ -44,6 +44,7 @@ exports.handle = (client) => {
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained],
+      artist: [Albrecht Dürer]
     },
   })
 }

@@ -13,7 +13,7 @@ Who is the artist?
 * ask_question/artist
 
 Tell me who made this?
-* Ask_Question/Artist
+* ask_Question/artist
 
 By whom is this?
 * ask_question/artist
