@@ -38,13 +38,17 @@ exports.handle = (client) => {
       artist:'artist'
     },
     autoResponses: {
-      // configure responses to be automatically sent as predicted by the machine learning model
+      artist: {
+      minimumConfidence: 0.2
     },
+
+      // configure responses to be automatically sent as predicted by the machine learning model
+  
     streams: {
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained],
-      artist: [Albrecht Dürer]
+
     },
   })
 }
